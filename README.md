@@ -1,4 +1,4 @@
-height2normal is python3 script to convert height map ping image to normal map png.
+height2normal is python3 script to convert from height map ping image to normal map png.
 
 ## dependency
 height2normal.py depends on python3 modules argparse, textwrap, pillow and numpy.
@@ -6,18 +6,18 @@ height2normal.py depends on python3 modules argparse, textwrap, pillow and numpy
 ## How to use
 usage is below:
 
-`height2normal.py [-h] [-n FILE] [-z FILE] [-t TAPNUM] [-r VHRATIO] [-d DIFF] [-g GAMMA] [-e EXPAND] [-b BLUR] [-s SIGMA] FILE`
+`python3 height2normal.py [-h] [-n FILE] [-z FILE] [-t TAPNUM] [-r VHRATIO] [-d DIFF] [-g GAMMA] [-e EXPAND] [-b BLUR] [-s SIGMA] FILE`
 
 easily, execute as follows.
 
-` height2normal.py FILE`
+`python3 height2normal.py FILE`
 
 you can get two output file normalmap.png and zanglemap.ping at same directory.
 File that input file should be grayscale png image. given rgb image will be converted as grayscale.
 
 for example, input FILE is below  
 
-` height2normal.py fuji_Height_Map_Merged.png`
+`python3 height2normal.py fuji_Height_Map_Merged.png`
 
 input FILE is below.
  ![heightmap](fuji_Height_Map_Merged.png "FILE")
